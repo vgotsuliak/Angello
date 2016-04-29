@@ -1,0 +1,24 @@
+<html ng-app="Angello">
+<head>
+    <title>Angello</title>
+    <script src="vendor/angular.js"></script>
+    <script src="src/angello/Angello.js"></script>
+</head>
+<body ng-controller="MainCtrl as main">
+    <div class="navBar">
+        <span>
+            <a href="#/">main page</a>
+        </span>
+        <span>
+            <a href="#/users">users</a>
+        </span>
+        <span>
+            <a href="#/storyboard">storyboard</a>
+        </span>
+        <span>
+            {{main.superVar}}
+        </span>
+    </div>
+    <div ng-view=""></div>
+</body>
+</html>
